@@ -1,0 +1,107 @@
+Contorl Staments
+  -Decission Statements
+	-If/Else
+        -If/Else IF/Else
+        -Switch
+  -Looping Statements
+	-While
+ 	-Do-While
+	-For
+  -Other Statments
+	-Break
+	-Continue
+--------------------------
+If/Else
+
+if(condition)
+{
+	//code-1
+}
+else
+{
+	//code-2
+}
+----------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------
+if/else if/else
+
+if(contion)
+{
+    	//code-1
+}
+else if(contion)
+{
+	//code-2
+}
+else
+{
+	//code-3
+}
+--------------------------
+switch(case)
+{
+ case case1: //code-1
+	        break;
+ case case2: //code-2
+	        break;
+ case case3: //code-3
+	        break;
+ case case4: //code-4
+	        break;
+ case case5: //code-5
+	        break;
+ default : //default-code
+}
+
+Note:- case can be a number or a character
+---------------------------
+while syntax
+
+
+while(condition)
+{
+  //code-1
+} 
+
+do
+{
+  //code-1
+}  
+while(contion);
+
+
+for(intialization;condition;increment/decrement)
+{
+    //code-1
+}
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
