@@ -32,6 +32,8 @@ public class FramesHandlingExample {
 		// switch to frameC by passing webelement to the frame method
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(driver.findElement(By.xpath("//frameset/frame[@src='frame_c.html']")));
+        
+        
 		WebElement elementFname3 = driver.findElement(By.name("fname3"));
 		elementFname3.sendKeys("Sudheer Kumar");
 		

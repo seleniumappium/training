@@ -15,12 +15,16 @@ public class SeleniumWebElementMethodsExample
 		 WebDriver driver = new FirefoxDriver();  //its to initialize firefox dirve, and open the browser
 		 driver.get("http://www.google.com");
 		 WebElement searchButton = driver.findElement(By.name("btnK"));
+        
 		 String btnLabel = searchButton.getAttribute("aria-label");
+         String cssValue = searchButton.getCssValue("font-family");
+        
+        
 		 String btnTagName = searchButton.getTagName(); 
 		 boolean isSearchBtnDisplayed =  searchButton.isDisplayed();
 		 boolean isSearchBtnEnabled = searchButton.isEnabled();
 		 boolean isSelected = searchButton.isSelected();
-		 String cssValue = searchButton.getCssValue("font-family");
+		
 		 Point searchBtnLoc = searchButton.getLocation();
 		 Dimension searchBtnSize = searchButton.getSize();
 		 
