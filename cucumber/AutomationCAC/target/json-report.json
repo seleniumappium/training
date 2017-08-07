@@ -1,0 +1,421 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1389319450,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Opens the CAC application",
+            "match": {
+              "location": "LoginStepDefinition.user_Opens_the_CAC_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6727269123,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefinition.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "test login with valid credentials",
+        "description": "",
+        "id": "login-feature-tests;test-login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 126804719,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 407997101,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enter username \"johnbush@chinna.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "johnbush@chinna.com",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginStepDefinition.user_enter_username(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 90675165,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enter password \"secret\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "secret",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginStepDefinition.user_enter_password(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1240582297,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User clicks on the login button",
+            "match": {
+              "location": "LoginStepDefinition.user_clicks_on_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6094139908,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Login should be successful",
+            "match": {
+              "location": "LoginStepDefinition.login_should_be_successful()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1127406744,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Opens the CAC application",
+            "match": {
+              "location": "LoginStepDefinition.user_Opens_the_CAC_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4558198459,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefinition.setUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "test login with invalid credentials",
+        "description": "",
+        "id": "login-feature-tests;test-login-with-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 87380341,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 234399120,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enter invalid username \"abc@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc@gmail.com",
+                  "offset": 29
+                }
+              ],
+              "location": "LoginStepDefinition.user_enter_invalid_username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 57875754,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User enter invalid password \"abc\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc",
+                  "offset": 29
+                }
+              ],
+              "location": "LoginStepDefinition.user_enter_invalid_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 305966166,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User clicks on the login button",
+            "match": {
+              "location": "LoginStepDefinition.user_clicks_on_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33830775,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Login should be failed with \"An incorrect Email address or Password was specified\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "An incorrect Email address or Password was specified",
+                  "offset": 29
+                }
+              ],
+              "location": "LoginStepDefinition.login_should_be_failed_with(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@smoke"
+          },
+          {
+            "line": 15,
+            "name": "@regression"
+          },
+          {
+            "line": 1,
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1043130875,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Opens the CAC application",
+            "match": {
+              "location": "LoginStepDefinition.user_Opens_the_CAC_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3656559967,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefinition.setUp()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "test login with invalid credentials",
+        "description": "",
+        "id": "login-feature-tests;test-login-with-invalid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 71385037,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 374118670,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enter invalid username \"xyz@abc.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "xyz@abc.com",
+                  "offset": 29
+                }
+              ],
+              "location": "LoginStepDefinition.user_enter_invalid_username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 77762693,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User enter invalid password \"xyz\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "xyz",
+                  "offset": 29
+                }
+              ],
+              "location": "LoginStepDefinition.user_enter_invalid_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 325820661,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User clicks on the login button",
+            "match": {
+              "location": "LoginStepDefinition.user_clicks_on_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32815848,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Login should be failed with \"An incorrect Email address or Password was specified\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "An incorrect Email address or Password was specified",
+                  "offset": 29
+                }
+              ],
+              "location": "LoginStepDefinition.login_should_be_failed_with(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@smoke"
+          },
+          {
+            "line": 15,
+            "name": "@regression"
+          },
+          {
+            "line": 1,
+            "name": "@all"
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature Tests",
+    "description": "",
+    "id": "login-feature-tests",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@all"
+      }
+    ]
+  }
+]
