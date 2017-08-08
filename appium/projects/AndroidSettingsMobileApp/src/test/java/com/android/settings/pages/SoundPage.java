@@ -43,7 +43,6 @@ public class SoundPage
 	
 	public void selectDefaultNotificationSound(String defaultSound)
 	{
-		driver.scrollTo(defaultSound);
 		WebElement xenonElement = driver.findElement(By.name(defaultSound));
 		xenonElement.click();
 	}

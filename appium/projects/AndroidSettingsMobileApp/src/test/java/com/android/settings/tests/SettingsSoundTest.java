@@ -45,7 +45,7 @@ public class SettingsSoundTest
 	}
 	
 	@Test
-	public void testVolumePopupDisplay()
+	public void testAVolumePopupDisplay()
 	{
 		//Test-1 : click on sound,click on volumes.
 		//Expected output: Volume screen should be opened.
@@ -68,7 +68,7 @@ public class SettingsSoundTest
 	
 	
 	@Test
-	public void testSelectionOfXenonInDefaultNotification()
+	public void testBSelectionOfXenonInDefaultNotification()
 	{
 		ExcelUtil excelUtil = new ExcelUtil("./src/test/resources/notificationdata.xls", 0);
 		int numberOfRows = excelUtil.getNumberOfRows();
