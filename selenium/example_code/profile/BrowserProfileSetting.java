@@ -25,3 +25,4 @@ public class BrowserProfileSetting {
 
 
 
+browser.startup.homepage;about:home

@@ -1,0 +1,60 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red0\green128\blue128;\red63\green127\blue127;\red127\green0\blue127;
+\red42\green0\blue255;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c50196\c50196;\csgenericrgb\c24706\c49804\c49804;\csgenericrgb\c49804\c0\c49804;
+\csgenericrgb\c16471\c0\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh15500\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 1) Test with real iPhone device: Please show a Test program with an iPhone app with real iPhone device\
+Pending \
+\
+\
+2) More than one ACTIVITY: Can we see a program, where more than one activity is used for testing ?\
+\'97 We need only main activity to set in the desired capability.\
+\
+3) Single program - multiple devices: How to execute the same test program on multiple devices simultaneously?\
+   Single program  \'97 multiple devices, Not possible at all.\
+\
+\'97 testing.xml can have multiple classes, those can be executed parallel , by providing parameter \'93parallel = classes\'94\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs22 \cf2 <\cf3 suite\cf0  \cf4 name\cf0 =\cf5 "Suite1"\cf0   \cf4 parallel\cf0 =\cf5 "tests"\cf0  \cf4 verbose\cf0 =\cf5 "1"\cf0  \cf2 >\
+\
+
+\f0\fs36 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 4) Single device - multiple browsers: How to execute the same test program in multiple browsers on a single device?\
+\'97 testing.xml can have multiple classes, those can be executed one by one sequentially\
+\
+\
+5) Dynamic elements -  How to handle dynamic elements on a page, whose ids / x-paths are changing ?\
+\'97 find any other locator which is always remain same\
+\'97 Xpath - do not include the locator which changes dynamically\
+\
+\
+6) Estimations - Could you give few examples on how to give estimations for automation work, resources and timescales ?  What can be automated and what can\'92t be in any app ?\
+   \'97 Analyse the app\
+         \'97 Number of screen\
+         \'97 Complexity of app \
+         \'97 Number of TestCases\
+   \'97 Creating automation framework  ( 3 weeks easily  [min 2 weeks])\
+  			\'97 I create hybrid framework \
+			\'97 these are the components (page object, obj rep)\
+                 \'97 Test the framework by writing some test cases\
+   \
+   \'97 4 to 5 test cases per day  \
+   \'97 3 test cases per  ( 20 or 30 tests are there)\
+         \
+\
+\
+7) Combine both Laptop and Device:  What care need to be taken, if there is a need to execute a test program on a browser using laptop; as well as to execute some tests on the iPhone/Android devices using the SAME program.\
+  - Selenium Project is for web application\
+  - Appium Project is for Mobile application.\
+\
+Pending\'97  How to run the same program on  android and iOS  ? need to change existing framework .\
+\
+\
+8)Any complex Excel reads/ writes.\
+ 	\'97 reading the data from excel, and that to from cell (row,colno)}

@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.android.settings.pages.SettingsPage;
@@ -36,7 +37,6 @@ public class SettingsSoundTest
 		caps.setCapability(MobileCapabilityType.DEVICE_NAME, "B1-730HD"); 
 		caps.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.android.settings");
 		caps.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.android.settings.Settings");
-		
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),caps);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
@@ -74,10 +74,10 @@ public class SettingsSoundTest
 		int numberOfRows = excelUtil.getNumberOfRows();
 		for(int i =1;i<=numberOfRows;i++)
 		{
-			String notificationData = excelUtil.getCellValue(i, 0);
+			String notificationData = excelUtil.getCellValue(i, 0);  //row,col number  1,0/ 2,0
 			settingsPage.clickOnSound();
 			soundPage.clickOnNotificationSound();
-			soundPage.selectDefaultNotificationSound(notificationData);
+			soundPage.selectDefaultNotificationSound(notificationData); //xenon, altair
 			soundPage.clickOnOKButton();
 	
 			if(soundPage.isDefaultNotificationSoundDisplayed(notificationData))

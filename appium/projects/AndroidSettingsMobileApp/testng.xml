@@ -1,0 +1,23 @@
+<suite name="Suite1"  parallel="tests" verbose="1" >
+
+
+  
+ 
+  <test name="SettingsDisplay">
+  
+    <classes>
+     
+    </classes>
+  </test>
+  
+  <test name="SettingSound" >
+  	
+    <classes>
+       <class name="com.android.settings.tests.SettingsSoundTest" />
+       
+    </classes>
+  </test>
+  
+  
+  
+</suite>

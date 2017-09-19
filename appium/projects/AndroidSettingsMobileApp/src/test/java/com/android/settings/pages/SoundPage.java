@@ -24,7 +24,7 @@ public class SoundPage
 		WebElement volumesElement = driver.findElement(By.name(propertyValue));
 		volumesElement.click();
 	}
-	
+
 	public void clickOnNotificationSound()
 	{
 		String propertyValue = propertyUtil.getPropertyValue("soundpage_defaultnotificationsound_item_name");
