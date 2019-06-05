@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="52436" started-at="2019-06-01T02:00:17Z" finished-at="2019-06-01T02:01:10Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="52436" started-at="2019-06-01T02:00:17Z" finished-at="2019-06-01T02:01:10Z">
+      <class name="com.wordpress.tests.LoginTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.wordpress.tests.LoginTest@224edc67]" name="setUp" is-config="true" duration-ms="10896" started-at="2019-06-01T07:30:17Z" finished-at="2019-06-01T07:30:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeMethodInChildClass()[pri:0, instance:com.wordpress.tests.LoginTest@224edc67]" name="beforeMethodInChildClass" is-config="true" duration-ms="3603" started-at="2019-06-01T07:30:28Z" finished-at="2019-06-01T07:30:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodInChildClass -->
+        <test-method status="PASS" signature="testLoginWithValidCredentials()[pri:1, instance:com.wordpress.tests.LoginTest@224edc67]" name="testLoginWithValidCredentials" duration-ms="7881" started-at="2019-06-01T07:30:32Z" finished-at="2019-06-01T07:30:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithValidCredentials -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.wordpress.tests.LoginTest@224edc67]" name="tearDown" is-config="true" duration-ms="346" started-at="2019-06-01T07:30:40Z" finished-at="2019-06-01T07:30:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.wordpress.tests.LoginTest@224edc67]" name="setUp" is-config="true" duration-ms="8346" started-at="2019-06-01T07:30:40Z" finished-at="2019-06-01T07:30:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeMethodInChildClass()[pri:0, instance:com.wordpress.tests.LoginTest@224edc67]" name="beforeMethodInChildClass" is-config="true" duration-ms="4628" started-at="2019-06-01T07:30:49Z" finished-at="2019-06-01T07:30:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodInChildClass -->
+        <test-method status="PASS" signature="testLoginWithInvalidCredentials_InvalidUser()[pri:2, instance:com.wordpress.tests.LoginTest@224edc67]" name="testLoginWithInvalidCredentials_InvalidUser" duration-ms="16296" started-at="2019-06-01T07:30:53Z" finished-at="2019-06-01T07:31:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithInvalidCredentials_InvalidUser -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.wordpress.tests.LoginTest@224edc67]" name="tearDown" is-config="true" duration-ms="351" started-at="2019-06-01T07:31:09Z" finished-at="2019-06-01T07:31:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.wordpress.tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
