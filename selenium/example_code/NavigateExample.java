@@ -11,7 +11,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class NavigateExample {
 	public static void main(String[] args) {
-		WebDriver driver = new FirefoxDriver();
+        System.setProperty("webdriver.chrome.driver", "/Users/test/drivers/chrome_74/chromedriver");
+        WebDriver driver = new ChromeDriver();
 		Options options = driver.manage();
 		options.timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		options.window().maximize();

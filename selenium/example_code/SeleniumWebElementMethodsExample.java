@@ -12,7 +12,8 @@ public class SeleniumWebElementMethodsExample
 {
 	public static void main(String[] args)
 	{
-		 WebDriver driver = new FirefoxDriver();  //its to initialize firefox dirve, and open the browser
+         System.setProperty("webdriver.chrome.driver", "/Users/test/drivers/chrome_74/chromedriver");
+         WebDriver driver = new ChromeDriver();  //its to initialize firefox dirve, and open the browser
 		 driver.get("http://www.google.com");
 		 WebElement searchButton = driver.findElement(By.name("btnK"));
         

@@ -9,7 +9,8 @@ import org.openqa.selenium.interactions.Actions;
 
 public class Ex04_DrawImage {
 	public static void main(String[] args) {
-		WebDriver driver = new FirefoxDriver();
+        System.setProperty("webdriver.chrome.driver", "/Users/test/drivers/chrome_74/chromedriver");
+        ChromeDriver driver = new ChromeDriver();
 		driver.get("http://www.theautomatedtester.co.uk/demo1.html");
 
 		Actions builder = new Actions(driver);

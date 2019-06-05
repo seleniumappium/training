@@ -12,7 +12,8 @@ public class MultipleWindowsExample
 {
 	public static void main(String[] args) {
 		//Setup and Open Browser
-		WebDriver driver = new FirefoxDriver();
+        System.setProperty("webdriver.chrome.driver", "/Users/test/drivers/chrome_74/chromedriver");
+        WebDriver driver = new ChromeDriver();
 		driver.get("http://www.citibank.co.in/");
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		

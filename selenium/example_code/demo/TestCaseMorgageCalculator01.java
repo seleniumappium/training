@@ -20,7 +20,8 @@ public class TestCaseMorgageCalculator01 {
 
   @Before
   public void setUp() throws Exception {
-    driver = new FirefoxDriver();
+    System.setProperty("webdriver.chrome.driver", "/Users/test/drivers/chrome_74/chromedriver");
+    driver = new ChromeDriver();
     baseUrl = "http://www.mortgagecalculator.org/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }

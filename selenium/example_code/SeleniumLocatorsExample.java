@@ -11,7 +11,8 @@ public class SeleniumLocatorsExample
 {
   public static void main(String[] args)
   {
-	WebDriver driver = new FirefoxDriver();
+    System.setProperty("webdriver.chrome.driver", "/Users/test/drivers/chrome_74/chromedriver");
+    WebDriver driver = new ChromeDriver();
 	driver.get("http://www.mortgagecalculator.org/");
 	WebElement homeElement = driver.findElement(By.name("param[homevalue]"));
 	homeElement.clear();

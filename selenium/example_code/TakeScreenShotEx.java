@@ -17,7 +17,8 @@ public class TakeScreenShotEx {
 		WebDriver driver = null;
 		try
 		{
-			driver = new FirefoxDriver();
+            System.setProperty("webdriver.chrome.driver", "/Users/test/drivers/chrome_74/chromedriver");
+            driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			driver.get("http://www.mortgagecalculator.org/");
 			

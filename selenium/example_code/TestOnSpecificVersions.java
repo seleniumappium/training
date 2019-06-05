@@ -13,7 +13,8 @@ public class TestOnSpecificVersions {
 	
 	public static void main(String[] args)
 	{
-		WebDriver driver = new FirefoxDriver();
+        System.setProperty("webdriver.chrome.driver", "/Users/test/drivers/chrome_74/chromedriver");
+        WebDriver driver = new ChromeDriver();
 		driver.get("http://www.javascriptkit.com/javatutors/event2.shtml");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		//driver.findElement(By.name("fd0")).click();

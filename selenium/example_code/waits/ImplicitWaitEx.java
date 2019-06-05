@@ -7,7 +7,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class ImplicitWaitEx {
 	public static void main(String[] args) {
-		WebDriver driver = new FirefoxDriver();
+        System.setProperty("webdriver.chrome.driver", "/Users/test/drivers/chrome_74/chromedriver");
+        ChromeDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("http://www.google.com");
 		long start =System.currentTimeMillis();

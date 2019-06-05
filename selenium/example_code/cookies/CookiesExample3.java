@@ -15,7 +15,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class CookiesExample3 {
 	public static void main(String[] args) throws InterruptedException {
-		WebDriver driver = new FirefoxDriver();
+        
+        System.setProperty("webdriver.chrome.driver", "/Users/test/drivers/chrome_74/chromedriver");
+        ChromeDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("https://www.facebook.com/");
 		try{

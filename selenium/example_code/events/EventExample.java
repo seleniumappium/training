@@ -7,7 +7,8 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 public class EventExample {
 	public static void main(String[] args) {
-		WebDriver driver = new FirefoxDriver();
+        System.setProperty("webdriver.chrome.driver", "/Users/test/drivers/chrome_74/chromedriver");
+        ChromeDriver driver = new ChromeDriver();
 		EventFiringWebDriver firingDriver = new EventFiringWebDriver(driver);
 		EventListener listener = new EventListener();
 		firingDriver.register(listener);
